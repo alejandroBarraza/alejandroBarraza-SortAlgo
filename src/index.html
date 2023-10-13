@@ -13,17 +13,30 @@
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div class="container-fluid text-center mt-4">
+      <form action="#" id="form">
+        <input
+          type="text"
+          placeholder="Number of card"
+          name="inputCard"
+          id="inputCard"
+        />
+        <button id="drawButton">Draw</button>
+        <button id="sortButton">Sort</button>
+      </form>
+      <div class="row justify-content-center ">
+        <div class="col-10">
+          <div class="d-flex flex-wrap mt-5" id="hook">
+            <!-- render html-->
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center ">
+        <div class="col-10" id="hook-sorted"></div>
       </div>
     </div>
+
+    <!-- render sorted here! -->
   </body>
 </html>
